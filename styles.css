@@ -1,0 +1,48 @@
+:root{
+  --primary-color : #A7F3D0;
+  --button-color : #9CA3AF;
+  --secondary-color: #DC2626;
+}
+
+*{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.imp{
+   padding: 0.5rem;
+   color: var(--secondary-color);
+   background-color: white;
+   width: 38%;
+   margin: 2rem auto;
+}
+
+.container{
+    padding : 1rem;
+    margin:2rem auto;
+    border: 3px solid;
+    display:block;
+}
+
+.label-class{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#check-button{
+        padding: 0.5rem;
+        margin: 2rem auto;
+        font-weight: bold;
+        border: 3px solid;
+        font-size: 25px;
+        background-color: var(--button-color);
+        cursor: pointer;
+    }
+
+
+#output{
+    padding : 1rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+

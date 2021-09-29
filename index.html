@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Is your birthday lucky</title>
+
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1> is your birthday lucky ?</h1>
+    <h1> is your birthday lucky ? </h1>
 
-    <label for="date-of-birth">Enter your Date of Birth</label>
-    <input id="date-of-birth" type="date" placeholder="YYYY-MM-DD"  required>
+    <div class="imp">Important NOTE : We dont store data so their is no question of any privacy theft !!</div>
 
-    <label for="lucky-number">Enter your lucky number</label>
-    <input id="lucky-number" type="number"  required>
+    <label for="date-of-birth" class="label-class">Enter your Date of Birth</label>
+    <input id="date-of-birth" class="container" type="date" placeholder="YYYY-MM-DD" required>
+
+    <label for="lucky-number" class="label-class">Enter your lucky number</label>
+    <input id="lucky-number" class="container" type="number" required>
 
     <button id="check-button">Check</button>
 
-    <h4>Result can be seen below ⬇️ </h2>
+    <h3><u>Result can be seen below ⬇️ </u></h3>
     <div id="output"></div>
 
 
-    <script src="app.js" type="text/javascript"></script>
+        <script src="app.js" type="text/javascript"></script>
 </body>
+
 </html>
