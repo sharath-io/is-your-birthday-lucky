@@ -9,13 +9,19 @@ function checkDOBIsLucky() {
     var lucky_num = luckyNumber.value;
     if (dob && lucky_num) {
         var result = calculateSum(dob);
-        if (result % lucky_num == 0)
-            output_display.innerText = "Your birthday is lucky ";
-        else
-            output_display.innerText = "Your birthday is not lucky ";
+        if (result % lucky_num == 0) {
+            output_display.style.color = "blue";
+            output_display.innerText = "🎂  Your birthday is lucky  🎂 ";
 
-    } else
-        output_display.innerText = "Note: Please do enter the fields ";
+        } else {
+            output_display.style.color = "gray";
+            output_display.innerText = "🙂  Your birthday is not lucky 🙂";
+        }
+
+    } else {
+        output_display.style.color = "red";
+        output_display.innerText = "👊   Note: Please do enter the fields  👊 ";
+    }
 
 }
 
